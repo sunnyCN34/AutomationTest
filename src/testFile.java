@@ -13,12 +13,13 @@ public class testFile {
 		
       
 		driver1.get("http://www.dcu.org");
+		
  
         
-        System.out.println("Successfully opened the website of DCU");
+        System.out.println("This is a test. Successfully opened the website of DCU");
  
 		
-		Thread.sleep(5000);
+		Thread.sleep(1000);
 		
         
         driver1.quit();
