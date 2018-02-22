@@ -1,4 +1,10 @@
+import java.util.concurrent.TimeUnit;
+
+import junit.framework.Assert;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver; 
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 public class testFile {
  
@@ -11,12 +17,15 @@ public class testFile {
 		
 		WebDriver driver1 = new FirefoxDriver();
 		
-      
-		driver1.get("http://www.dcu.org");
 		
- 
-        
-        System.out.println("This is a test. Successfully opened the website of DCU");
+		driver1.get("https://works-preprod.fivision.com/Login.aspx?ReturnUrl=%2fdefault.aspx");
+		Thread.sleep(500);
+		driver1.findElement(By.id("tbfiVISIONID")).sendKeys("I am Automated");
+		driver1.findElement(By.id("tbPassword")).sendKeys("wrongPassword");
+		Thread.sleep(500);
+		driver1.findElement(By.id("ctl00_cphMainContent_btnLogin")).click();   
+		Assert.assertNotNull("ctl00_cphMainContent_lblError");
+        System.out.println("This is a test. Its a failed login try");
  
 		
 		Thread.sleep(1000);
