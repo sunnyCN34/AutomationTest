@@ -12,45 +12,16 @@ public class TestNG {
 	public WebDriver driver;
 
   @Test
-
   public void main() {
 
-	
-
-      driver.findElement(By.id("account")).click();
-
-      // Find the element that's ID attribute is 'log' (Username)
-
-      // Enter Username on the element found by above desc.
-
-      driver.findElement(By.id("log")).sendKeys("testuser_1");
-
-      // Find the element that's ID attribute is 'pwd' (Password)
-
-      // Enter Password on the element found by the above desc.
-
-      driver.findElement(By.id("pwd")).sendKeys("Test@123");
-
-      // Now submit the form. WebDriver will find the form for us from the element
-
-      driver.findElement(By.id("login")).click();
-
-      // Print a Log In message to the screen
-
-      System.out.println(" Login Successfully, now it is the time to Log Off buddy.");
-
-      // Find the element that's ID attribute is 'account_logout' (Log Out)
-
-      driver.findElement(By.id("account_logout"));
-
+	  driver.findElement(By.id("tbfiVISIONID")).sendKeys("I am Automated in TestNG framework");
+	  driver.findElement(By.id("tbPassword")).sendKeys("wrongPassword");
+	  driver.findElement(By.id("ctl00_cphMainContent_btnLogin")).click();
+      System.out.println(" Login unsuccessful, now it is the time to close buddy.");
   }
 
   @BeforeMethod
-
   public void beforeMethod() {
-
-	  // Create a new instance of the Firefox driver
-
       
       System.setProperty("webdriver.gecko.driver", "./geckodriver-v0.19.1-win64/geckodriver.exe");
       driver = new FirefoxDriver();
@@ -58,20 +29,12 @@ public class TestNG {
 
       driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
-      //Launch the Online Store Website
-
-      driver.get("http://www.dcu.org");
-
+      driver.get("https://works-preprod.fivision.com/Login.aspx?ReturnUrl=%2fdefault.aspx");
   }
 
   @AfterMethod
-
   public void afterMethod() {
 
-	  // Close the driver
-
       driver.quit();
-
   }
-
 }

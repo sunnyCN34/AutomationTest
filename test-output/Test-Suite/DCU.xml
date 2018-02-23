@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite hostname="LAPIS171" tests="1" failures="0" timestamp="23 Feb 2018 20:18:24 GMT" time="7.224" errors="0">
+  <testcase name="main" time="0.583" classname="TestNG"/>
+</testsuite>
