@@ -1,10 +1,7 @@
-import java.util.concurrent.TimeUnit;
-
 import junit.framework.Assert;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver; 
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 public class testFile {
  
@@ -19,8 +16,9 @@ public class testFile {
 		
 		
 		driver1.get("https://works-preprod.fivision.com/Login.aspx?ReturnUrl=%2fdefault.aspx");
-		Thread.sleep(500);
+		Thread.sleep(5);
 		driver1.findElement(By.id("tbfiVISIONID")).sendKeys("I am Automated");
+		Thread.sleep(500);
 		driver1.findElement(By.id("tbPassword")).sendKeys("wrongPassword");
 		Thread.sleep(500);
 		driver1.findElement(By.id("ctl00_cphMainContent_btnLogin")).click();   
