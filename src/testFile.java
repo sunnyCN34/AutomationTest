@@ -1,16 +1,12 @@
-import junit.framework.Assert;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver; 
 import org.openqa.selenium.firefox.FirefoxDriver;
+
 public class testFile {
  
 	public static void main(String[] args) throws InterruptedException {
 		
 		System.setProperty("webdriver.gecko.driver", "./geckodriver-v0.19.1-win64/geckodriver.exe");
-		//C:\Users\s_sahu\Downloads\geckodriver-v0.19.1-win64
-		
-		
 		
 		WebDriver driver1 = new FirefoxDriver();
 		
@@ -22,7 +18,8 @@ public class testFile {
 		driver1.findElement(By.id("tbPassword")).sendKeys("wrongPassword");
 		Thread.sleep(500);
 		driver1.findElement(By.id("ctl00_cphMainContent_btnLogin")).click();   
-		Assert.assertNotNull("ctl00_cphMainContent_lblError");
+		
+		
         System.out.println("This is a test. Its a failed login try");
  
 		
