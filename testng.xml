@@ -1,0 +1,7 @@
+<suite name="Test-Suite">
+   <test name="DCU">
+      <classes>
+         <class name="TestNG" />
+      </classes>
+   </test>
+</suite>
