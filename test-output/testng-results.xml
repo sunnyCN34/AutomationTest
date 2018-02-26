@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Test-Suite" duration-ms="7224" started-at="2018-02-23T15:18:17Z" finished-at="2018-02-23T15:18:24Z">
+  <suite name="Default suite" duration-ms="7021" started-at="2018-02-26T11:19:02Z" finished-at="2018-02-26T11:19:09Z">
     <groups>
     </groups>
-    <test name="DCU" duration-ms="7224" started-at="2018-02-23T15:18:17Z" finished-at="2018-02-23T15:18:24Z">
+    <test name="Default test" duration-ms="7021" started-at="2018-02-26T11:19:02Z" finished-at="2018-02-26T11:19:09Z">
       <class name="TestNG">
-        <test-method status="PASS" signature="beforeMethod()" name="beforeMethod" is-config="true" duration-ms="6312" started-at="2018-02-23T15:18:17Z" finished-at="2018-02-23T15:18:23Z">
+        <test-method status="PASS" signature="beforeMethod()" name="beforeMethod" is-config="true" duration-ms="6285" started-at="2018-02-26T11:19:02Z" finished-at="2018-02-26T11:19:08Z">
         </test-method>
-        <test-method status="PASS" signature="main()" name="main" duration-ms="583" started-at="2018-02-23T15:18:23Z" finished-at="2018-02-23T15:18:24Z">
+        <test-method status="PASS" signature="main()" name="main" duration-ms="465" started-at="2018-02-26T11:19:08Z" finished-at="2018-02-26T11:19:09Z">
         </test-method>
-        <test-method status="PASS" signature="afterMethod()" name="afterMethod" is-config="true" duration-ms="311" started-at="2018-02-23T15:18:24Z" finished-at="2018-02-23T15:18:24Z">
+        <test-method status="PASS" signature="afterMethod()" name="afterMethod" is-config="true" duration-ms="258" started-at="2018-02-26T11:19:09Z" finished-at="2018-02-26T11:19:09Z">
         </test-method>
       </class>
     </test>
