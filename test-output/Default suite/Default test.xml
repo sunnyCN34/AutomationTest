@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite hostname="LAPIS171" tests="1" failures="0" timestamp="26 Feb 2018 16:19:09 GMT" time="7.021" errors="0">
-  <testcase name="main" time="0.465" classname="TestNG"/>
+<testsuite hostname="LAPIS171" name="test_cases.AccountServicesApplication" tests="1" failures="0" timestamp="2 Mar 2018 21:12:13 GMT" time="49.336" errors="0">
+  <testcase name="account_services_application_test" time="44.067" classname="test_cases.AccountServicesApplication"/>
 </testsuite>

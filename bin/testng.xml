@@ -1,0 +1,8 @@
+<suite name="Test-Suite">
+   <test name="DCU">
+      <classes>  
+         <class name="test_cases.AccountServicesApplication"/>
+         <class name="test_cases.LoginIE"/>
+      </classes>
+   </test>
+</suite>
