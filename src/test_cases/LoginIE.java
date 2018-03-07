@@ -55,8 +55,8 @@ public class LoginIE {
 
   return new Object[][] {
    {
-    "ssahu@dcu.org",
-    "Winter2018"
+    "sample@dcu.org",
+    "Sample2018"
    }
   };
  }
